@@ -23,3 +23,6 @@ mods
 classes
 gradlew*
 gradle
+target
+.env
+dependency-reduced-pom.xml
