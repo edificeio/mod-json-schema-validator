@@ -6,7 +6,7 @@
   <parent>
     <groupId>io.edifice</groupId>
     <artifactId>app-parent</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
   </parent>
 
   <groupId>com.opendigitaleducation</groupId>
@@ -14,8 +14,9 @@
   <version>2.0-zookeeper-SNAPSHOT</version>
 
   <properties>
-    <web-utils.version>3.1-zookeeper-SNAPSHOT</web-utils.version>
-    <jsonSchemaValidatorVersion>2.2.0</jsonSchemaValidatorVersion>
+    <web-utils.version>3.2-zookeeper-SNAPSHOT</web-utils.version>
+    <jsonSchemaValidatorVersion>2.2.14</jsonSchemaValidatorVersion>
+      <shade.minimizeJar>false</shade.minimizeJar>
   </properties>
 
   <scm>
@@ -45,11 +46,15 @@
       <version>${web-utils.version}</version>
       <scope>compile</scope>
     </dependency>
-    <dependency>
-      <groupId>com.github.fge</groupId>
-      <artifactId>json-schema-validator</artifactId>
-      <version>${jsonSchemaValidatorVersion}</version>
-      <scope>compile</scope>
-    </dependency>
+
+
+
+      <dependency>
+          <groupId>com.github.java-json-tools</groupId>
+          <artifactId>json-schema-validator</artifactId>
+          <version>${jsonSchemaValidatorVersion}</version>
+      </dependency>
+
+
   </dependencies>
 </project>
