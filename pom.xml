@@ -11,10 +11,10 @@
 
   <groupId>com.opendigitaleducation</groupId>
   <artifactId>mod-json-schema-validator</artifactId>
-  <version>2.2.0</version>
+  <version>2.2-SNAPSHOT</version>
 
   <properties>
-    <web-utils.version>3.4.0</web-utils.version>
+    <web-utils.version>3.4-SNAPSHOT</web-utils.version>
     <jsonSchemaValidatorVersion>2.2.14</jsonSchemaValidatorVersion>
       <shade.minimizeJar>false</shade.minimizeJar>
   </properties>
